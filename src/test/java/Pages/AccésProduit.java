@@ -20,10 +20,9 @@ public class AccésProduit {
 	
 	@FindBy(xpath="/html/body/main/div/section/div[3]/div[1]/div[4]/ol/li/div[2]/h5/a")
 	List<WebElement> produits;
-	@FindBy(xpath="//h1")
+	@FindBy(xpath="/html/body/main/div/section/div[2]/div/div[5]/div[2]/div/div/h1")
 	WebElement verifArticle;
 	public AccésProduit() {
-		
 		
 		PageFactory.initElements(Config.driver, this);
 	}
